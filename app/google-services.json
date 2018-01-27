@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "26951987628",
+    "firebase_url": "https://liveupdatestatus-7e99b.firebaseio.com",
+    "project_id": "liveupdatestatus-7e99b",
+    "storage_bucket": "liveupdatestatus-7e99b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26951987628:android:573f444533df66da",
+        "android_client_info": {
+          "package_name": "com.example.abzalbekissabekov.abzalapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "26951987628-7safgminrj0fqsri6bm0m1u6hmbj28h0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.abzalbekissabekov.abzalapp",
+            "certificate_hash": "49e9b741c9bbf6a7adf21c4a6430865277343049"
+          }
+        },
+        {
+          "client_id": "26951987628-48hrichb33q0fbvg75gs80s84uvoh9ca.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBx5mAbbgXsMdf22LaT53OBIvJGXT4g_8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "26951987628-48hrichb33q0fbvg75gs80s84uvoh9ca.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
