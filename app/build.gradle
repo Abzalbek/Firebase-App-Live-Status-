@@ -44,7 +44,7 @@ dependencies {
     implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
 
 //    // FirebaseUI for Firebase Realtime Database
-   implementation 'com.firebaseui:firebase-ui-database:1.2.0'
+    implementation 'com.firebaseui:firebase-ui-database:1.2.0'
 //
 //    // FirebaseUI for Cloud Firestore
 //    implementation 'com.firebaseui:firebase-ui-firestore:3.2.1'

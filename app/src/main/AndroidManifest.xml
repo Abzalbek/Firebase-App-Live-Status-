@@ -21,8 +21,10 @@
             android:name=".RegisterActivity"
             android:parentActivityName=".LoginActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".PostActivity"
-            android:parentActivityName=".HomeActivity"></activity>
+        <activity
+            android:name=".PostActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity android:name=".ProfileActivity"></activity>
     </application>
 
 </manifest>
