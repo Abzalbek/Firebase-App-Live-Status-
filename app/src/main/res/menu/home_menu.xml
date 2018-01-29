@@ -3,16 +3,22 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:title="Add New"
         android:id="@+id/addNewMenu"
-        app:showAsAction="never"
+        android:title="Add New"
+        app:showAsAction="always"
 
         />
 
     <item
-        android:title="Logout"
         android:id="@+id/logoutMenu"
+        android:title="Logout"
         app:showAsAction="never"
+
+        />
+    <item
+        android:id="@+id/myProfileMenu"
+        android:title="My profile"
+        app:showAsAction="ifRoom"
 
         />
 </menu>
