@@ -50,7 +50,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 mDialog.setMessage("Please wait...");
-                mDialog.show();
+                //mDialog.show();
 
                 String email = mEmailEditText.getText().toString().trim();
                 String password = mPasswordEditText.getText().toString().trim();
