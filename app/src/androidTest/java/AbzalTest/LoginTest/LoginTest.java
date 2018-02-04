@@ -2,6 +2,7 @@ package AbzalTest.LoginTest;
 
 import android.content.res.Resources;
 import android.support.test.InstrumentationRegistry;
+import android.support.test.espresso.IdlingResource;
 import android.support.test.rule.ActivityTestRule;
 
 import com.example.abzalbekissabekov.abzalapp.LoginActivity;
@@ -38,6 +39,7 @@ public class LoginTest extends BaseTest {
     @Before
     public void setUp() {
         resources = InstrumentationRegistry.getTargetContext().getResources();
+
     }
 
 
@@ -78,7 +80,10 @@ public class LoginTest extends BaseTest {
         //loginPage.checkAlertOfWrongUser();
 
     }
-        /** following test scenario always requires new email data , can generate method for random emails **/
+
+    /**
+     * following test scenario always requires new email data , can generate method for random emails
+     **/
     @Test
     public void createAccount() {
         new LoginPage()

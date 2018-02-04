@@ -28,9 +28,9 @@ import static android.support.test.espresso.matcher.ViewMatchers.withText;
 
 public class HomePage {
 
-    public HomePage (){
+    public HomePage() {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(5000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -40,12 +40,12 @@ public class HomePage {
                 .check(matches(isDisplayed()));
     }
 
-    public PostPage clickOnAddNew(){
+    public PostPage clickOnAddNew() {
         onView(withId(R.id.addNewMenu)).perform(click());
         return new PostPage();
     }
 
-    public MyProfilePage clickOnMyProfileMenu(){
+    public MyProfilePage clickOnMyProfileMenu() {
         onView(withId(R.id.myProfileMenu)).perform(click());
         return new MyProfilePage();
     }

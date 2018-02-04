@@ -16,6 +16,8 @@ buildscript {
         // in the individual module build.gradle files
         // Add this line
         classpath 'com.google.gms:google-services:3.1.0'
+        classpath 'com.stanfy.spoon:spoon-gradle-plugin:1.2.2'
+
     }
 }
 

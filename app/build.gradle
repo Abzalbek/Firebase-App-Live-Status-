@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'spoon'
 
 android {
     compileSdkVersion 26
@@ -30,6 +31,9 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     androidTestCompile 'com.android.support.test.espresso:espresso-contrib:3.0.1'
+    androidTestCompile 'com.android.support.test.espresso.idling:idling-concurrent:3.0.1'
+    androidTestCompile 'com.squareup.spoon:spoon-client:1.6.4'
+
 
 
     //noinspection GradleCompatible
@@ -63,3 +67,20 @@ dependencies {
 }
 // Add to the bottom of the file
 apply plugin: 'com.google.gms.google-services'
+
+spoon {
+    // for debug output
+    debug = true
+
+    // To run a single test class
+    className = 'AbzalTest.LoginTest.LoginTest'
+
+    // To run a single method in TestCase
+    methodName = 'testLogin'
+
+    // To execute the tests device by device */
+    sequential = true
+
+    // To grant permissions to Android M >= devices */
+    grantAllPermissions = true
+}
