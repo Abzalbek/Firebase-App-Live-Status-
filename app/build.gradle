@@ -68,19 +68,19 @@ dependencies {
 // Add to the bottom of the file
 apply plugin: 'com.google.gms.google-services'
 
-spoon {
-    // for debug output
-    debug = true
-
-    // To run a single test class
-    className = 'AbzalTest.LoginTest.LoginTest'
-
-    // To run a single method in TestCase
-    methodName = 'testLogin'
-
-    // To execute the tests device by device */
-    sequential = true
-
-    // To grant permissions to Android M >= devices */
-    grantAllPermissions = true
-}
+//spoon {
+//    // for debug output
+//    debug = true
+//
+//    // To run a single test class
+//    className = 'AbzalTest.LoginTest.LoginTest'
+//
+//    // To run a single method in TestCase
+//    methodName = 'testLogin'
+//
+//    // To execute the tests device by device */
+//    sequential = true
+//
+//    // To grant permissions to Android M >= devices */
+//    grantAllPermissions = true
+//}
