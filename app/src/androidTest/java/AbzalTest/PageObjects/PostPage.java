@@ -26,12 +26,12 @@ public class PostPage {
     }
 
     public PostPage typeTextToPost(String text) {
-        onView(withId(R.id.postEditText)).perform(typeText(text));
+        onView(withId(R.id.postEditText)).check(matches(isDisplayed())).perform(typeText(text));
         return this;
     }
 
     public PostPage clickOnPostButton() {
-        onView(withId(R.id.postButton)).perform(click());
+        onView(withId(R.id.postButton)).check(matches(isDisplayed())).perform(click());
         return this;
     }
 

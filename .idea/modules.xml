@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AbzalApp.iml" filepath="$PROJECT_DIR$/AbzalApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Firebase-App-Live-Status-By-Abzal.iml" filepath="$PROJECT_DIR$/Firebase-App-Live-Status-By-Abzal.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

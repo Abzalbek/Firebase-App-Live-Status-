@@ -41,12 +41,12 @@ public class HomePage {
     }
 
     public PostPage clickOnAddNew() {
-        onView(withId(R.id.addNewMenu)).perform(click());
+        onView(withId(R.id.addNewMenu)).check(matches(isDisplayed())).perform(click());
         return new PostPage();
     }
 
     public MyProfilePage clickOnMyProfileMenu() {
-        onView(withId(R.id.myProfileMenu)).perform(click());
+        onView(withId(R.id.myProfileMenu)).check(matches(isDisplayed())).perform(click());
         return new MyProfilePage();
     }
 

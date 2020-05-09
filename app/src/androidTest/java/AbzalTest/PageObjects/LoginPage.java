@@ -23,21 +23,21 @@ public class LoginPage {
     }
 
     public LoginPage fillEmail(@NonNull String userEmail) {
-        onView(withId(R.id.emailEditTextLogin)).perform(
+        onView(withId(R.id.emailEditTextLogin)).check(matches(isDisplayed())).perform(
                 typeText(userEmail)
         );
         return this;
     }
 
     public LoginPage fillPassword(@NonNull String userPassword) {
-        onView(withId(R.id.passwordEditTextLogin)).perform(
+        onView(withId(R.id.passwordEditTextLogin)).check(matches(isDisplayed())).perform(
                 typeText(userPassword)
         );
         return this;
     }
 
     public void clickOnLoginButton() {
-        onView(withId(R.id.loginButton)).perform(
+        onView(withId(R.id.loginButton)).check(matches(isDisplayed())).perform(
                 click()
         );
     }
@@ -69,7 +69,7 @@ public class LoginPage {
     }
 
     public AccountCreatePage clickOnCreateAccount(){
-        onView(withId(R.id.createAccountMenu)).perform(click());
+        onView(withId(R.id.createAccountMenu)).check(matches(isDisplayed())).perform(click());
         return new AccountCreatePage();
     }
 }
