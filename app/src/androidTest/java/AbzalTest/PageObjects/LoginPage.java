@@ -51,12 +51,15 @@ public class LoginPage {
         onView(withText("Email can not be empty")).check(matches(isDisplayed()));
         return this;
     }
+
     public LoginPage checkAlertOfEmptyPasswrodTextField() {
         onView(withText("Password can not be empty")).check(matches(isDisplayed()));
         return this;
     }
 
-    /** need to ask someone to cover that point. now Espresso doesnt cover system popup windows**/
+    /**
+     * need to ask someone to cover that point. now Espresso doesnt cover system popup windows
+     **/
     public LoginPage checkAlertOfWrongUser() {
         try {
             Thread.sleep(3000);
@@ -68,7 +71,7 @@ public class LoginPage {
         return this;
     }
 
-    public AccountCreatePage clickOnCreateAccount(){
+    public AccountCreatePage clickOnCreateAccount() {
         onView(withId(R.id.createAccountMenu)).check(matches(isDisplayed())).perform(click());
         return new AccountCreatePage();
     }

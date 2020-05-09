@@ -2,8 +2,6 @@ package com.example.abzalbekissabekov.abzalapp;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.annotation.NonNull;
-import android.support.annotation.VisibleForTesting;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -14,7 +12,6 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-
 import com.example.abzalbekissabekov.abzalapp.modul.Status;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.auth.FirebaseAuth;
@@ -24,6 +21,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
+
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -87,7 +85,7 @@ public class HomeActivity extends AppCompatActivity {
                 return true;
             case R.id.myProfileMenu:
                 Intent goToProfile = new Intent(HomeActivity.this, ProfileActivity.class);
-                goToProfile.putExtra("USER_ID",mAuth.getCurrentUser().getUid());
+                goToProfile.putExtra("USER_ID", mAuth.getCurrentUser().getUid());
                 startActivity(goToProfile);
                 return true;
         }
@@ -175,6 +173,5 @@ public class HomeActivity extends AppCompatActivity {
             userStatusTextView.setText(status);
         }
     }
-
 
 }

@@ -35,13 +35,13 @@ public class PostPage {
         return this;
     }
 
-    public PostPage checkToast(String toast){
+    public PostPage checkToast(String toast) {
         onView(withText(toast)).inRoot(new ToastMatcher())
                 .check(matches(isDisplayed()));
         return this;
     }
 
-    public HomePage clickBackButton(){
+    public HomePage clickBackButton() {
         closeSoftKeyboard();
         pressBack();
         return new HomePage();

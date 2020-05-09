@@ -6,7 +6,6 @@ import android.support.test.espresso.IdlingResource;
 import android.support.test.rule.ActivityTestRule;
 
 import com.example.abzalbekissabekov.abzalapp.LoginActivity;
-import com.example.abzalbekissabekov.abzalapp.R;
 
 import org.junit.Before;
 import org.junit.Rule;
@@ -17,12 +16,6 @@ import AbzalTest.PageObjects.AccountCreatePage;
 import AbzalTest.PageObjects.HomePage;
 import AbzalTest.PageObjects.LoginPage;
 import AbzalTest.PageObjects.PostPage;
-
-import static android.support.test.espresso.Espresso.onView;
-import static android.support.test.espresso.action.ViewActions.click;
-import static android.support.test.espresso.action.ViewActions.typeText;
-import static android.support.test.espresso.matcher.ViewMatchers.withId;
-import static android.support.test.espresso.matcher.ViewMatchers.withText;
 
 /**
  * Created by abzalbekissabekov on 1/29/18.
@@ -36,12 +29,12 @@ public class LoginTest extends BaseTest {
 
     private Resources resources;
 
+
     @Before
     public void setUp() {
         resources = InstrumentationRegistry.getTargetContext().getResources();
 
     }
-
 
     @Test
     public void testLogin() {
