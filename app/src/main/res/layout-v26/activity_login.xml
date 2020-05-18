@@ -33,13 +33,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword" />
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:autofillHints="" />
 
     <!--button-->
     <Button
         android:id="@+id/loginButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login" />
+        android:text="@string/login_btn" />
 </LinearLayout>

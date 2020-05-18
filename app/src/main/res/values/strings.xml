@@ -1,4 +1,16 @@
 <resources>
     <string name="app_name">AbzalApp</string>
     <string name="title_activity_register">RegisterActivity</string>
+    <string name="login_account">Login to your account</string>
+    <string name="email1">Email</string>
+    <string name="password">Password</string>
+    <string name="login_btn">Login</string>
+    <string name="what_s_going_on">What\'s going on ...</string>
+    <string name="post_btn">Post</string>
+    <string name="todo">TODO</string>
+    <string name="create_account">Create Account</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="sign_up_btn">Sign Up</string>
+    <string name="password1">Password</string>
 </resources>
