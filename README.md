@@ -8,7 +8,7 @@ Added test framework with Espresson UI.
 
 Work ahead:
 
-Change design
-Update dependencies
-Add activities
+Change design \
+Update dependencies \
+Add activities \
 Expand features
